@@ -5,12 +5,14 @@ const game = () => {
     // Start game
     const startGame = () => {
         const playBtn = document.querySelector(".start-btn");
-        const introTitle = document.querySelector(".intro");
-        const match = document.querySelector(".match");
-
+        const introTitle = document.querySelector(".intro-title");
+        const intro = document.querySelector(".intro")
+        console.log("hello")
         playBtn.addEventListener("click", () => {
-            introScreen.classList.add("fadeOut");
-            match.classList.add("fadeIn")
+            
+            playBtn.classList.add("fadeOut");
+            console.log(playBtn.classList);
+            // introTitle.classList.add("fadeOut");
         });
     };
 
