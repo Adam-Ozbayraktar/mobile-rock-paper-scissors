@@ -4,8 +4,8 @@ const game = () => {
 
     // Start game
     const startGame = () => {
-        const playBtn = document.querySelector(".intro button");
-        const introScreen = document.querySelector(".intro");
+        const playBtn = document.querySelector(".start-btn");
+        const introTitle = document.querySelector(".intro");
         const match = document.querySelector(".match");
 
         playBtn.addEventListener("click", () => {
@@ -37,15 +37,17 @@ const game = () => {
                 const computerNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[computerNumber];
                 
-                playerHand.src = "./assets/rock.png";
-                computerHand.src = "./assets/rock.png";
+                playerHand.src = "./assets/fist.svg";
+                computerHand.src = "./assets/fist.svg";
 
                 setTimeout(() => {
                     // Here we compare hands
                     compareHands(this.textContent, computerChoice)
                     //Update Images
-                    playerHand.src = `./assets/${this.textContent}.png`;
-                    computerHand.src = `./assets/${computerChoice}.png`;
+                    playerHand.src = `./assets/${this.textContent}.svg`;
+                    playerHand.className = "end";
+                    computerHand.src = `./assets/${computerChoice}.svg`;
+                    computerHand.className = "end";
                     }, 900)
 
                 // Animation

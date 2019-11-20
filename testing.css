@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-.game {
-    display:grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeate(5, 20%);
+section {
     height: 100vh;
     background-color: rgb(39, 41, 68);
     font-family: sans-serif;
@@ -16,11 +13,12 @@
 .score {
     color: rgb(224, 224, 224);
     height: 20vh;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .score h2 {
     font-size: 30px;
-    grid-column-start: 5;
 }
 .score p {
     text-align: center;
@@ -31,6 +29,9 @@
 .intro {
     color: rgb(224, 224, 224);
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     transition: opacity 0.5s ease;
 }
