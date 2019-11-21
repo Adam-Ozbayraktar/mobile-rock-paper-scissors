@@ -104,12 +104,12 @@
 .player-end {
     margin-right: 50px;
     height: 50%;
-    width: 50%;
+    width: 40%;
 }
 
 .computer-end{
     height: 50%;
-    width: 50%;
+    width: 40%;
 }
 
 div.fadeOut {
