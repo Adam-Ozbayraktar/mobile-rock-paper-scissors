@@ -9,6 +9,10 @@
     /* height: 100%;
     width: 100%; */
     background: rgba(157, 216, 200, 1);
+    /* font-family: 'Alata', sans-serif; */
+    font-family: 'Fredoka One', cursive;
+    /* font-family: 'Baloo Bhai', cursive; */
+    /* font-family: 'Luckiest Guy', cursive; */
 }
 
 .intro {
@@ -23,6 +27,7 @@
     padding-bottom: 200px;
 }
 .start-btn, .options button{
+    font-family: 'Fredoka One', cursive;
     width: 240px;
     height: 65px;
     background: none;
@@ -65,9 +70,6 @@
     
     /* justify-content: space-between;
     align-items: space-between */
-}
-button.disable-click {
-    pointer-events: none;
 }
 .rock, .paper, .scissors {
     margin-bottom: 10px;
