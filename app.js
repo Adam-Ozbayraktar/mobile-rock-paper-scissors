@@ -52,8 +52,14 @@ const game = () => {
                     }, 900)
 
                 // Animation
+                const choices = document.querySelector(".options");
+                // slide.style.pointerEvents = "none";
+                choices.style.pointerEvents = "none";
                 playerHand.style.animation = "shakePlayer 1.2s ease";
                 computerHand.style.animation = "shakeComputer 1.2s ease";
+                setTimeout(() => { 
+                    choices.style.pointerEvents = "all";
+                }, 2000)
             });
         });
     };
