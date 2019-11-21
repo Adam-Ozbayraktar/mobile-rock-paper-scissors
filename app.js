@@ -5,14 +5,13 @@ const game = () => {
     // Start game
     const startGame = () => {
         const playBtn = document.querySelector(".start-btn");
-        const introTitle = document.querySelector(".intro-title");
-        const intro = document.querySelector(".intro")
-        console.log("hello")
+        const intro = document.querySelector(".intro");
+        const match = document.querySelector(".match");
         playBtn.addEventListener("click", () => {
             
             playBtn.classList.add("fadeOut");
-            console.log(playBtn.classList);
-            // introTitle.classList.add("fadeOut");
+            intro.classList.add("fadeOut");
+            match.classList.add("fadeIn")
         });
     };
 
@@ -47,9 +46,9 @@ const game = () => {
                     compareHands(this.textContent, computerChoice)
                     //Update Images
                     playerHand.src = `./assets/${this.textContent}.svg`;
-                    playerHand.className = "end";
+                    playerHand.className= "player-end";
                     computerHand.src = `./assets/${computerChoice}.svg`;
-                    computerHand.className = "end";
+                    computerHand.className= "computer-end";
                     }, 900)
 
                 // Animation
